@@ -14,9 +14,9 @@ namespace KorhanTry
             elemanlar = new T[0]; //class'ımızı newlediğimzide burası otomatik olarak çalışacak ..
                                   //biz burada dizimizin şu an sıfır elemanlı olduğunu gösterdik..
         }
-        public void Ekle(T eleman) // T tipinde string,integer olabilir mesela eleman ekle dedik..
+        public void Ekle(T eleman) // T tipinde string,integer olabilir mesela, eleman ekle dedik..
         {
-            T[] GeciciDizi = elemanlar; // T tipinde geçici dizi oluşturduk ve bu dizinin de elemanlara eşit olduğunu söyledik artık elemanlar dizisini tutan bir dizimiz var..(ödünç verdik)
+            T[] GeciciDizi = elemanlar; // T tipinde geçici dizi oluşturduk ve bu dizinin de elemanlar dizisine  eşit olduğunu söyledik artık elemanlar dizisini tutan bir dizimiz var..(ödünç verdik)
             elemanlar = new T[elemanlar.Length + 1];   // elemanlar dizimize dinamik olarak 1  veri kadar artıracak şekilde tasaladık..
             for (int i = 0; i < GeciciDizi.Length; i++)
             {
